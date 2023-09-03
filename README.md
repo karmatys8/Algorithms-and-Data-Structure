@@ -2,16 +2,16 @@
 
 ## Description
 
-The most interesting codes from Algorithms and Data Structures lessons at AGH IT 2 semester.<br>
+The most interesting codes from Algorithms and Data Structures lessons at AGH IT 2nd semester.<br>
 All of them are written by me, however some of them are inspired by others ideas/algorithms.
 Some of them include descriptions of algorithms but if so they are in Polish. Hopefully someone can benefit from them.<br>
 Tasks descriptions were added later and hence may be incomplete/incorrect.
 
-## Study time line
+## Study timeline
 
 1. Sorts
 2. Graphs
-3. Dynamin programing
+3. Dynamic programing
 4. Exam
 
 ## Personal favorites
