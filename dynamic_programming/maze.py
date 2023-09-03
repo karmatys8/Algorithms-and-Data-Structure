@@ -47,7 +47,3 @@ def maze( L ):
     
     result = max(max_dist[ln -1][ln -1][0], max_dist[ln -1][ln -1][1])
     return result if result else -1
-            
-
-
-runtests( maze, all_tests = True )
