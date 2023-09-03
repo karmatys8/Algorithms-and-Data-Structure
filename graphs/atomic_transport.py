@@ -1,3 +1,12 @@
+'''
+Task: We get the graph (G) and two starting locations s and t.
+      We have to transport atomic substances whilst keeping them at least min_d distance between them.
+      Our task is to determine whether it is possible to make atomic substances swap places.
+      s -> t and t -> s keeping min_d at all time
+'''
+
+
+
 def atomic_transport(G, s, t, min_d):
     ln = len(G)
     
