@@ -1,3 +1,9 @@
+'''
+Task: Given a graph as adjacency list, with positive and negative values, find the path with highest value.
+'''
+
+
+
 def path(G, root):
     max = 0
     
