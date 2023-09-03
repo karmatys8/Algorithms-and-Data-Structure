@@ -1,11 +1,17 @@
-from egz1btesty import runtests
+'''
+Task: Find subtrees which have all of the leaves at the same level.
+      From them pick the widest trees and then from them the highest.
+      Response is the width and the height of the selected subtree and number of branches cut off.
+'''
+
+
 
 '''Armatys Konrad 415566
 Algorytm: zauważmy że nasz root zawsze znajdzie się w rozw, załózmy że jest ianczej to wtedy mamy drzewo oszerokości s i wysokości w;
             no ale korzeń naszego wyniku musi być dzieckiem roota więc dla szerokości s możemy osiągnąć wysokośc większą od w;
-            najpierw przechodzimy po drzewie i zliczamy ile jest elem na każdej wysokośći,
+            najpierw przechodzimy po drzewie i zliczamy ile jest elem na każdej wysokości,
             potem wybieramy największą z nich, jeżeli jakaś się powiela to bierzemy taką najniżej w drzewie żeby otrzymać największą wysokość;
-            w każdym pkt w drzewie czymamy wart. najgłębszeg dziecka;
+            w każdym pkt w drzewie trzymamy wart. najgłębszego dziecka;
             potem przechodzimy po drzewie i jeżeli wart. w pkt jest mniejsza od szukanego poziomu lub jesteśmy głebiej niż szukany poziom to odcianmy tę gałąź,
             w przeciwnym przypadku wchodzimy wgłąb;
 Złożoność: O(n)
@@ -67,9 +73,6 @@ def wideentall( T ):
   
   return max_i, cnts[max_i], res
 
-
-# zmien all_tests na True zeby uruchomic wszystkie testy
-runtests( wideentall, all_tests = True )
 
 A = Node()
 B = Node()
