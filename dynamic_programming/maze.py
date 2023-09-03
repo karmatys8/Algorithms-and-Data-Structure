@@ -1,4 +1,10 @@
-from zad7testy import runtests
+'''
+Task: Given a board n*n where '.' is accessible chamber and '#' is not find longest possible path from (0, 0) to (n -1, n -1).
+      Additionaly you cannot move left and cannot enter any chamber twice.
+      Return value is max. number of visited chambers not counting starting one or -1 if there is no solution.
+'''
+
+
 
 '''
 Armatys Konrad 415566
