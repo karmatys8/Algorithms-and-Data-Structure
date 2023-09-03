@@ -1,3 +1,10 @@
+'''
+Task: Implement Kruskal's algorithm
+algorithm: https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
+'''
+
+
+
 class Kruskal:
     def __init__(self, G):
         self.n_G = []
