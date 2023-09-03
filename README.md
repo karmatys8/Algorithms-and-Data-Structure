@@ -3,7 +3,9 @@
 ## Description
 
 The most interesting codes from Algorithms and Data Structures lessons at AGH IT 2 semester.<br>
-All of them are written by me, however some of them are inspired by others ideas/algorithms. Some of them include descriptions of algorithms but if so they are in Polish. Hopefully someone can benefit from them.
+All of them are written by me, however some of them are inspired by others ideas/algorithms.
+Some of them include descriptions of algorithms but if so they are in Polish. Hopefully someone can benefit from them.<br>
+Tasks descriptions were added later and hence may be incomplete/incorrect.
 
 ## Study time line
 
