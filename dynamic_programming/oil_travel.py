@@ -1,4 +1,11 @@
-from zad8testy import runtests
+'''
+Task: Travel from (0, 0) to (0, m -1) with least amount of stops.
+      During stop you can collect fuel from current tile and every tile adjacent in '+' shape to tile with fuel that connects to current tile.
+      Each fuel unit allows us to travel 1 tile. We have to travel in first (0 index) row.
+      Fuel tank has infinite capacity. Travel is always possible.
+'''
+
+
 
 '''Armatys Konrad 415566
 Algorytm: na początku obliczamy ile ropy możemy pobrać z każdego pola na trasie pamiętając że niektóre mogą się łączyć,
@@ -52,7 +59,3 @@ def plan(T):
     
     
     return res
-
-
-
-runtests( plan, all_tests = True )
