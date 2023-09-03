@@ -1,3 +1,10 @@
+'''
+Task: implement Medina of medians 
+algorithm: https://en.wikipedia.org/wiki/Median_of_medians
+'''
+
+
+
 def insertion_sort(T, a, b):
   for i in range(a, b):
     min_i = i
