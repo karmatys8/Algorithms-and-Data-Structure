@@ -1,4 +1,12 @@
-from egz1atesty import runtests
+'''
+Task: We get an array with n tiles. On every tile there is x snow.
+      We can take snow from either side.
+      If you don't take snow from the edge every tile before the selected one will be run over.
+      You can take 1 pile per day and after each day every pile melts by 1.
+      What is the maximum amount of snow that can be collected?
+'''
+
+
 
 '''Armatys Konrad 415566
 Algorytm: chcemy zebrać num największych górek gdzienumjest większe od ilości śniegu w num+1 (posortowane po ilośći śniegu malejąco);
@@ -35,7 +43,6 @@ def snow( S ):
             
     return sum - num*(num-1)/2
 
-# zmien all_tests na True zeby uruchomic wszystkie testy
-runtests( snow, all_tests = True )
+
 S = [1, 7, 3, 4, 1]
 #print(snow(S))
