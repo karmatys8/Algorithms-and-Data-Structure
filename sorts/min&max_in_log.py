@@ -1,3 +1,10 @@
+'''
+Task: Implement data structure from which you can extract min, max in log.
+      Insert should also be in log.
+'''
+
+
+
 import copy
 
 class QuickMinAndMax:
