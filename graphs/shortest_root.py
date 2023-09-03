@@ -1,3 +1,9 @@
+'''
+Task: Given a tree, find the vertice for which tree rooted in it has the shallowest depth.
+'''
+
+
+
 def shortest_root(G):
     ln = len(G)
     min_v = (float('inf'), None)
