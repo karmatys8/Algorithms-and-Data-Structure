@@ -1,3 +1,9 @@
+'''
+Task: Implement data structure from which you can extract median in log and insert in log.
+'''
+
+
+
 class QuickMedian:
   def __init__(self, array) -> None:
     self.array = array
