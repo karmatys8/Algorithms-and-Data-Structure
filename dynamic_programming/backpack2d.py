@@ -1,3 +1,10 @@
+'''
+Task: Solve 2D knapsack problem.
+problem: https://en.wikipedia.org/wiki/Knapsack_problem#Multi-dimensional_knapsack_problem
+'''
+
+
+
 def backpack2d(T, w, h):
   ln = len(T)
   
