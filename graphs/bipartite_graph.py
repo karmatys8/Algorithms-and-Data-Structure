@@ -1,4 +1,12 @@
-from zad6testy import runtests
+'''
+Task: In M we get a list of n employees. Everyone can work only on a certain number of n machines.
+      Array with index x represents every machine on which employee x can work.
+      Only one employee can work at one machine at the time.
+      Determine the max. amount of employees working at the same time.
+'''
+
+
+
 from collections import deque
 
 
@@ -72,6 +80,3 @@ def binworker(M):
         flow+=1
    
     return flow
-
-# zmien all_tests na True zeby uruchomic wszystkie testy
-runtests( binworker, all_tests = True )
