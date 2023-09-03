@@ -1,4 +1,12 @@
-from zad9testy import runtests
+'''
+Task: Drive from 0 tile to L tile for the cheapest possible.
+      You can drive T tiles at most before stopping and paying for a car park.
+      Exactly once u can drive up to 2T. In O array you get tiles at which car parks are.
+      While in C array you get costs for stopping there. O[i] corresponds to C[i].
+'''
+
+
+
 from queue import PriorityQueue
 
 ''' Armatys Konrad 415566
@@ -68,6 +76,3 @@ def min_cost( O, C, T, L ):
     
     
     return res
-
-# zmien all_tests na True zeby uruchomic wszystkie testy
-runtests( min_cost, all_tests = True )
