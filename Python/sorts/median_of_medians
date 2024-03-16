@@ -1,0 +1,64 @@
+'''
+Task: implement Median of medians 
+algorithm: https://en.wikipedia.org/wiki/Median_of_medians
+'''
+
+
+
+def insertion_sort(T, a, b):
+  for i in range(a, b):
+    min_i = i
+    
+    for j in range(i+1, b):
+      if T[min_i] > T[j]:
+        min_i = j
+    
+    if min_i != i:
+      T[i], T[min_i] = T[min_i], T[i]
+      
+  return T[(b-a) //2 +a]
+
+
+def partition(T, x):
+  x_i = None
+  i = 0
+  
+  for j in range(len(T)):
+    if T[j] <= x:
+      T[j], T[i] = T[i], T[j]
+      
+      if T[i] == x:
+        x_i = i
+      
+      i+=1
+        
+  i-=1
+  T[i], T[x_i] = T[x_i], T[i]
+  
+  return i
+
+
+def magic_5s(T, k):
+  medT = T
+  
+  while len(medT) > 1:
+    ln = len(medT)
+    nT = []
+    
+    for i in range(0, ln-4, 5):
+      nT.append(insertion_sort(medT, i, i+5))
+    
+    x = ln%5
+    if x:
+      nT.append(insertion_sort(medT, ln-x, ln))
+      
+    medT = nT
+  
+  y = partition(T, medT[0])
+  
+  if k==y:
+    return medT[0]
+  elif k < y:
+    return magic_5s(T[:y], k)
+  else:
+    return magic_5s(T[y+1:], k-y-1)
